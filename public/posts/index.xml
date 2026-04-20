@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 測試網站</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 測試網站</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 20 Apr 2026 18:36:34 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Mon, 20 Apr 2026 18:36:34 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;p&gt;這裡開始寫內容。&lt;/p&gt;
+&lt;h2 id=&#34;標題&#34;&gt;標題&lt;/h2&gt;
+&lt;p&gt;正文段落寫這裡，支援 Markdown 語法。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
