@@ -1,0 +1,146 @@
+/* ─── Accent colour ─────────────────────────────────── */
+:root {
+  --accent: #2563eb;
+  --accent-soft: rgba(37, 99, 235, 0.08);
+}
+:root[data-theme="dark"] {
+  --accent: #60a5fa;
+  --accent-soft: rgba(96, 165, 250, 0.1);
+}
+
+/* ─── Hero / Jumbo ──────────────────────────────────── */
+.hero {
+  padding: 64px 0 52px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+/* Left: text block */
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+
+.hero-name {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  color: var(--primary);
+}
+
+.hero-bio {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--secondary);
+  margin: 0 0 28px;
+  max-width: 460px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-outline {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity .18s, background .18s, border-color .18s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--theme);
+}
+.btn-primary:hover { opacity: 0.78; }
+
+.btn-outline {
+  border: 1.5px solid var(--tertiary);
+  color: var(--primary);
+  background: transparent;
+}
+.btn-outline:hover { border-color: var(--primary); }
+
+/* Right: photo placeholder */
+.hero-photo-wrap {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 18px;
+  border: 2px dashed var(--tertiary);
+  background: var(--entry);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--secondary);
+  transition: border-color .2s;
+}
+.hero-photo-wrap:hover { border-color: var(--accent); }
+
+.hero-photo-wrap svg { opacity: 0.35; }
+
+.hero-photo-label {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+}
+
+/* ─── Post list polish ──────────────────────────────── */
+.post-entry {
+  border-radius: 10px;
+  transition: background .15s;
+}
+.post-entry:hover { background: var(--entry); }
+
+/* ─── Nav active link accent ────────────────────────── */
+.menu a span.active {
+  color: var(--accent);
+}
+
+/* ─── Responsive ─────────────────────────────────────── */
+@media (max-width: 600px) {
+  .hero { padding: 40px 0 36px; }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .hero-photo-wrap {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+  }
+
+  .hero-name { font-size: 1.9rem; }
+}
